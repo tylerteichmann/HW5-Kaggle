@@ -174,5 +174,5 @@ cython_debug/
 .pypirc
 
 # Training and test data
-test\
-train\
+test/
+train/
