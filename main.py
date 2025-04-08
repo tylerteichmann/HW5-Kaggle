@@ -27,8 +27,8 @@ def main(n=None):
     model = LogisticRegression(solver="saga", max_iter=10000)
 
     # import training id and labels
-    training_data = pd.read_csv("train_labels.csv", nrows=n)
-    training_data = training_data.sample(n)
+    training_data = pd.read_csv("train_labels.csv")
+    training_data = training_data.sample(n, replace=True)
     X = pd.DataFrame()
     y = training_data["label"]
 
@@ -74,4 +74,4 @@ def main(n=None):
 
 
 if __name__ == "__main__":
-    main(10000)
+    main(100000)
