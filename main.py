@@ -23,8 +23,8 @@ import helpers
 
 
 def main():
-    training_file = "training_data.csv"
-    testing_file = "testing_data.csv"
+    training_file = "train/training_data.csv"
+    testing_file = "test/testing_data.csv"
 
     data_exists = (
         os.path.exists(f"./{training_file}") and
