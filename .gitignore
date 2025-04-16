@@ -176,3 +176,5 @@ cython_debug/
 # Training and test data
 test/
 train/
+testing_data.csv
+training_data.csv
